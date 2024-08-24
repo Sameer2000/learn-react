@@ -3,3 +3,15 @@
 - Local Server
 - HMR (Hot Module Replacement) - automatically refreshes the page on changes in any file
 - File Watching Algorithm - Written in C++
+- Image Optimization
+- Minification
+- Bundling
+- Compressing
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - support older browsers
+- Diagnostics
+- Error Handling
+- HTTPS support
+- Tree Shaking - remove unused code
+- Different Dev & Prod Bundles
