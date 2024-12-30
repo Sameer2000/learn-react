@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod-build": "npx parcel build index.html",
-    "dev-build": "npx parcel index.html"
+    "dev-build": "npx parcel index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",

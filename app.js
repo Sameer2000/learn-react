@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is h1 tag"),
-    React.createElement("h2", {}, "This is h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "This is h1 tag"),
-    React.createElement("h2", {}, "This is h2 tag"),
-  ]),
-]);
+// JSX is not a part of react
+// JSX - It is not HTML in JS but HTML or XML like syntax. JSX gets transpiled by parcel using Babel (JS compiler) before it reaches the JS engine
+// JSX => React.createElement => ReactElement (JS object) => HTMLElement (rendered)
+const jsxHeading = <h1>This is JSX</h1>;
+
+// React functional component
+const HeadingComponent = () => (
+  <div>
+    <h1>This is a react component</h1>
+    {jsxHeading}
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<HeadingComponent />);
